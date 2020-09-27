@@ -1,0 +1,160 @@
+* {
+  margin-top: 0;
+}
+body {
+  background-color: rgb(208, 211, 190);
+  display: flexbox;
+}
+.winner {
+  color: green;
+}
+/*  end game message  */
+.endMsg {
+  position: absolute;
+  margin-left: 51%;
+  font-size: 30px;
+  padding: 6px;
+  /*  adjusted to middle of the screen */
+  transform: translate(-50%);
+  text-align: center;
+  letter-spacing: 0.5rem;
+
+  background-image: linear-gradient(
+    to right,
+    #ff0055,
+    #ff7e01,
+    #00fe56,
+    #0266f3
+  );
+}
+/* heading */
+h1 {
+  text-align: center;
+  border: 3px solid #3571e7;
+  border-width: 10px;
+  background-color: #1252c9;
+  color: rgb(28, 223, 174);
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.gameInfo {
+  margin-top: 10%;
+  margin-left: 35%;
+}
+
+#wordTo {
+  font-size: 30px;
+  margin-left: 102px;
+}
+#sco1 {
+  margin-left: 48px;
+  /* flex-wrap: inherit; */
+}
+
+#sco2 {
+  margin-left: 111px;
+  /* flex-wrap: inherit; */
+}
+
+#play2Button {
+  margin-left: 47px;
+}
+
+.playFor,
+.plyscore {
+  margin-top: 30px;
+  margin-left: 5px;
+  padding: 5px 7px 5px 7px;
+  font-size: 30px;
+  /* font-weight: 50px; */
+}
+.playFor {
+  border: 3px solid #000;
+  /* font-weight: 50px; */
+}
+/* button styles */
+#play1Button,
+#play2Button,
+#reset {
+  width: 100px;
+  /* max-width: 100%; */
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+#play1Button,
+#play2Button {
+  margin-bottom: 18px;
+  background-color: rgb(133, 133, 214);
+}
+
+#reset {
+  margin-top: 4%;
+  padding: 5px;
+  background-color: rgb(228, 46, 46);
+  color: rgb(31, 33, 34);
+  font-size: 20px;
+  margin-left: 9rem;
+}
+
+#target {
+  margin-left: 19rem;
+}
+#play1 {
+  margin-top: 5px;
+  margin-left: 21rem;
+}
+/* game information */
+
+hr {
+  padding: 3px;
+  width: 80%;
+
+  background-color: rgb(137, 26, 221);
+  margin-top: 67px;
+  margin-bottom: 70px;
+}
+
+/* hightlights for target score validation */
+input:invalid:required {
+  border: 2px dashed red;
+  background-image: linear-gradient(
+    to right,
+    rgb(136, 155, 31),
+    rgb(182, 38, 28)
+  );
+}
+input:valid {
+  border: 4px solid black;
+}
+footer {
+  padding: 10px;
+  margin-top: 30%;
+  margin-left: 28%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .enterIn {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #play1 {
+    margin-top: 5px;
+    margin-left: 16rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #target {
+    margin-left: 14rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #reset {
+    margin-top: 9%;
+    margin-left: 2rem;
+  }
+}

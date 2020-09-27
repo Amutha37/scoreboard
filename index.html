@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>Score card</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="scorecard.css" />
+  </head>
+  <body>
+    <h1>Score Board</h1>
+    <!-- WINNER MESSAGE DISPLAY  -->
+    <p id="endMsg"><span class="winGame"></span></p>
+
+    <!-- score board display  -->
+
+    <div class="gameInfo">
+      <p id="wordTo">to</p>
+      <h2>
+        <span id="sco1"> 0 </span>
+        <span id="sco2">0</span>
+      </h2>
+
+      <!-- PLAYERS SCORE BOARD  -->
+      <button id="play1Button">Player 1</button>
+      <!-- <p id="wordTo">to</p> -->
+      <button id="play2Button">Player 2</button>
+
+      <div class="plyscore">
+        <p>Playing score :<span class="playFor">0</span></p>
+      </div>
+
+      <!-- <div>
+        <button id="reset">Reset</button>
+      </div> -->
+    </div>
+
+    <hr />
+    <!--  enter player and score target -->
+    <div id="target">
+      <!-- input score target  -->
+      <!-- <div id="target"> -->
+
+        <label for="inputTot">Enter target score :</label>
+        <input
+          type="number"
+          id="inputTot"
+          min="1"
+          max="50"
+          required
+          required
+          title="score target required to be 1 to 20"
+        />
+   
+    </div>
+    <div class="enterIn">
+      <div id="play1">
+        <div>
+        <label name="player1">Player 1 name :</label>
+        <input type="text" id="player1" minlength="3" maxlength="10" required />
+        </div>
+       <div>
+        <label name="player2">Player 2 name :</label>
+        <input type="text" id="player2" minlength="3" maxlength="10" required />
+      </div>
+    <div>
+    <!-- <button type="button" class="btn btn-dark" id="reset">Reset</button> -->
+
+    <!-- <button id="reset" class="btn.btn-warning sm-5">Reset</button> -->
+
+    <button id="reset">Reset</button>
+
+    </div>
+      
+    <!-- js links  -->
+    
+    <script type="text/javascript" src="scorecard.js"></script>
+
+    <!-- footer -->
+    <footer>
+      © Copyright Created in Sydney by &hearts; Amutha; with
+      &blacktriangleright;
+      <a href="mailto:tamamutha@gmail.com"> Click & Hop e-mail</a>
+    </footer>
+  </body>
+</html>
