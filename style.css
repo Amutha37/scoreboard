@@ -92,7 +92,7 @@ h1 {
 }
 
 #reset {
-  margin-top: 4%;
+  /* margin-top: 4%; */
   padding: 5px;
   background-color: rgb(228, 46, 46);
   color: rgb(31, 33, 34);
@@ -131,9 +131,10 @@ input:valid {
   border: 4px solid black;
 }
 footer {
-  padding: 10px;
-  margin-top: 30%;
-  margin-left: 28%;
+  text-align: center;
+  padding: 5px;
+  /* margin-top: 30%;
+  margin-left: 28%; */
 }
 /* @media only screen and (min-width: 480px) and (max-width: 576px) {
   .enterIn {
@@ -142,26 +143,42 @@ footer {
 @media only screen and (min-width: 100px) and (max-width: 576px) {
   footer {
     font-size: 10px;
-    margin-left: 1px;
+    margin-left: 6px;
   }
 }
-@media only screen and (min-width: 100px) and (max-width: 576px) {
-  .enterIn {
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  #target {
     width: 90%;
   }
 }
-@media only screen and (min-width: 100px) and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
+  footer {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .enterIn {
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 100px) {
+  .gameInfo {
+    margin-left: 65px;
+  }
+}
+@media only screen and (min-width: 100px) {
   #play1 {
     margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 100px) {
+  #target,
+  #play1 {
     margin-left: 9rem;
   }
 }
-@media only screen and (min-width: 100px) and (max-width: 576px) {
-  #target {
-    margin-left: 9rem;
-  }
-}
-@media only screen and (min-width: 100px) and (max-width: 576px) {
+@media only screen and (min-width: 100px) {
   #reset {
     margin-top: 9%;
     margin-left: 2rem;
