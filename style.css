@@ -8,12 +8,16 @@ body {
 .winner {
   color: green;
 }
+.lost {
+  color: rgb(215, 20, 79);
+}
 /*  end game message  */
 .endMsg {
   position: absolute;
   margin-left: 51%;
   font-size: 30px;
   padding: 6px;
+  font-weight: 700;
   /*  adjusted to middle of the screen */
   transform: translate(-50%);
   text-align: center;
@@ -43,43 +47,40 @@ h1 {
   margin-left: 35%;
 }
 
-#wordTo {
-  font-size: 30px;
-  margin-left: 102px;
+#scoreTable {
+  margin-top: 5rem;
 }
-#sco1 {
-  margin-left: 48px;
-  /* flex-wrap: inherit; */
+.text1 {
+  font-size: 2.5rem;
+  font-family: "serif", Times, Georgia, "Times New Roman";
+  /* text-align: center; */
+  color: rgb(148, 24, 155);
 }
-
+.text1,
+.scoreDis,
+.scoreBut,
+.resBut .headT,
+.input2 {
+  text-align: center;
+}
+#sco1,
 #sco2 {
-  margin-left: 111px;
-  /* flex-wrap: inherit; */
+  font-size: 2.3rem;
 }
-
-#play2Button {
-  margin-left: 47px;
+.headT {
+  font-size: 1.5rem;
+  color: rgb(13, 13, 224);
+  font-weight: 500;
 }
-
-.playFor,
-.plyscore {
-  margin-top: 30px;
-  margin-left: 5px;
-  padding: 5px 7px 5px 7px;
-  font-size: 30px;
-  /* font-weight: 50px; */
+.scoreDis {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
-.playFor {
-  border: 3px solid #000;
-  /* font-weight: 50px; */
-}
-/* button styles */
+/*  BUTTONS style */
 #play1Button,
 #play2Button,
 #reset {
-  width: 100px;
-  /* max-width: 100%; */
-  padding: 5px;
+  max-width: 203px;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -89,24 +90,19 @@ h1 {
 #play2Button {
   margin-bottom: 18px;
   background-color: rgb(133, 133, 214);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #reset {
-  /* margin-top: 4%; */
-  padding: 5px;
+  width: 100%;
+  padding: 3px;
   background-color: rgb(228, 46, 46);
   color: rgb(31, 33, 34);
   font-size: 20px;
-  margin-left: 9rem;
 }
 
-#target {
-  margin-left: 19rem;
-}
-#play1 {
-  margin-top: 5px;
-  margin-left: 21rem;
-}
 /* game information */
 
 hr {
@@ -120,67 +116,63 @@ hr {
 
 /* hightlights for target score validation */
 input:invalid:required {
-  border: 2px dashed red;
+  /* 
+  input:invalid{ */
+  border: 2px dashed rgb(165, 153, 223);
   background-image: linear-gradient(
     to right,
-    rgb(136, 155, 31),
-    rgb(182, 38, 28)
+    rgb(50, 128, 145),
+    rgb(187, 116, 123)
   );
 }
 input:valid {
+  background-color: rgb(125, 99, 154);
   border: 4px solid black;
 }
+
+.winGame {
+  font-size: 1rem;
+}
 footer {
+  margin-top: 90px;
+  font-size: 9px;
   text-align: center;
-  padding: 5px;
-  /* margin-top: 30%;
-  margin-left: 28%; */
 }
-/* @media only screen and (min-width: 480px) and (max-width: 576px) {
-  .enterIn {
-    width: 90%;
-  } */
-@media only screen and (min-width: 100px) and (max-width: 576px) {
-  footer {
-    font-size: 10px;
-    margin-left: 6px;
+.inputScore {
+  width: 8px;
+}
+
+@media only screen and (min-width: 1076px) {
+  #reset,
+  .heatT {
+    text-align: center;
+  }
+  .winGame {
+    font-size: 2rem;
   }
 }
-@media only screen and (min-width: 100px) and (max-width: 768px) {
-  #target {
-    width: 90%;
-  }
+/* table styles */
+td {
+  width: 150px;
+  height: 150px;
 }
-@media only screen and (min-width: 576px) {
-  footer {
-    font-size: 10px;
-    margin-left: 4px;
-  }
+
+.table1 {
+  margin: auto;
+  background-color: rgb(147, 230, 205);
+  border: 7px solid rgb(103, 211, 177);
 }
-@media only screen and (min-width: 576px) {
-  .enterIn {
-    margin-left: 10px;
-  }
+.table2 {
+  margin: auto;
+  background-color: rgb(97, 120, 177);
 }
-@media only screen and (min-width: 100px) {
-  .gameInfo {
-    margin-left: 65px;
-  }
+
+.horizontal {
+  border-bottom: 3px solid black;
 }
-@media only screen and (min-width: 100px) {
-  #play1 {
-    margin-top: 5px;
-  }
+.input2 {
+  margin-top: 1.5rem;
 }
-@media only screen and (min-width: 100px) {
-  #target,
-  #play1 {
-    margin-left: 9rem;
-  }
-}
-@media only screen and (min-width: 100px) {
-  #reset {
-    margin-top: 9%;
-    margin-left: 2rem;
-  }
+.playFor {
+  font-size: 3rem;
 }

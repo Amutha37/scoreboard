@@ -28,69 +28,121 @@
     <p id="endMsg"><span class="winGame"></span></p>
 
     <!-- score board display  -->
+    <!-- using table  -->
+    <div id="scoreTable">
+      <table class="table1">
+        <thead>
+          <tr>
+            <th class="headT">score</th>
+            <th></th>
 
-    <div class="gameInfo">
-      <p id="wordTo">to</p>
-      <h2>
-        <span id="sco1"> 0 </span>
-        <span id="sco2">0</span>
-      </h2>
+            <th class="headT">score</th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="scoreDis"><span id="sco1"> 0 </span></td>
+          <td class="text1">TO</td>
+          <td class="scoreDis"><span id="sco2">0</span></td>
+        </tr>
+        <!-- midle row -->
+        <tr>
+          <td class="horizontal scoreBut">
+            <button id="play1Button">Player 1</button>
+          </td>
+          <td class="horizontal"></td>
 
-      <!-- PLAYERS SCORE BOARD  -->
-      <button id="play1Button">Player 1</button>
-      <!-- <p id="wordTo">to</p> -->
-      <button id="play2Button">Player 2</button>
-
-      <div class="plyscore">
-        <p>Playing score :<span class="playFor">0</span></p>
-      </div>
-
-      <!-- <div>
-        <button id="reset">Reset</button>
-      </div> -->
+          <td class="horizontal scoreBut">
+            <button id="play2Button">Player 2</button>
+          </td>
+        </tr>
+        <!-- 3RD ROW target score -->
+        <tr>
+          <td class="plyscore scoreDis">Target score :</td>
+          <td class="scoreDis"><span class="playFor">0</span></td>
+          <td></td>
+        </tr>
+      </table>
     </div>
 
     <hr />
-    <!--  enter player and score target -->
-    <div id="target">
-      <!-- input score target  -->
-      <!-- <div id="target"> -->
-        <div>
-          <label for="inputTot">Enter target score :</label>
-          <input
-            type="number"
-            id="inputTot"
-            min="1"
-            max="50"
-         
-            required
-            title="score target required to be 1 to 50"
-          />
-        </div>
-        
-   
-    </div>
-    <div class="enterIn">
-      <div id="play1">
-        <div>
-        <label name="player1">Player 1 name :</label>
-        <input type="text" id="player1" minlength="3" maxlength="10" required />
-        </div>
-       <div>
-        <label name="player2">Player 2 name :</label>
-        <input type="text" id="player2" minlength="3" maxlength="10" required />
-      </div>
-    <div>
-    <!-- <button type="button" class="btn btn-dark" id="reset">Reset</button> -->
 
-    <!-- <button id="reset" class="btn.btn-warning sm-5">Reset</button> -->
+    <!-- table format input field -->
+    <form>
+      <table class="table2">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="headT">Name</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tr>
+          <!-- player 1 name label  -->
+          <td class="td1 input2">
+            <label name="player1">Player 1 :</label>
 
-    <button id="reset">Reset</button>
+            <div class="input2">
+              <label name="player2">Player 2 :</label>
+            </div>
+          </td>
+          <!-- score input  -->
+          <td class="td1">
+            <!-- player 1 input  -->
+            <input
+              type="text"
+              id="player1"
+              minlength="3"
+              maxlength="15"
+              required
+            />
+            <!-- player 2 name input  -->
+            <div class="input2">
+              <input
+                type="text"
+                id="player2"
+                minlength="3"
+                maxlength="15"
+                required
+              />
+              <!-- required -->
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <!-- middle row -->
+        <tr>
+          <td class="horizontal td1"></td>
 
-    </div>
-      
+          <td class="horizontal">
+            <div class="input2">
+              <label for="inputScore">Target score :</label>
+
+              <!-- <div class="input2"> -->
+              <input type="number" id="inputScore" max="50" required />
+            </div>
+          </td>
+
+          <td class="horizontal"></td>
+        </tr>
+        <!-- 3rd row -->
+
+        <tr>
+          <td class="td1"></td>
+
+          <td class="resBut">
+            <!-- reset button -->
+            <div>
+              <button id="reset">Reset</button>
+            </div>
+          </td>
+
+          <!-- <td></td> -->
+        </tr>
+      </table>
+    </form>
+
     <!-- js links  -->
-    
+
     <script type="text/javascript" src="score.js"></script>
 
     <!-- footer -->
